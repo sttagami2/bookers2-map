@@ -76,6 +76,9 @@ gem 'devise'
 
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
+gem 'jp_prefecture'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'pry-rails'
+gem 'simple_form'
+gem 'geocoder'
