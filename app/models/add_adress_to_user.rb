@@ -1,0 +1,2 @@
+class AddAdressToUser < ApplicationRecord
+end

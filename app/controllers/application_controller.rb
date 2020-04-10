@@ -19,8 +19,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_in, keys: [:name])
   end
 
+  
   private
-    def user_params
-      params.require(:user).permit(:name, :introduction, :profile_image, :postcode, :prefecture_code, :prefecture_name, :address_city, :address_street)
-    end
+  def user_params
+    params.require(:user).permit(:name, :introduction, :profile_image, :postcode, :prefecture_code, :prefecture_name, :address_city, :address_street)
+  end
 end

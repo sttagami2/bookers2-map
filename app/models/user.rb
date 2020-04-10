@@ -38,8 +38,8 @@ class User < ApplicationRecord
     JpPrefecture::Prefecture.find(code: prefecture_code).try(:pname)
   end
   
-  def prefecture_name=(prefecture_pname)
-    self.prefecture_code = JpPrefecture::Prefecture.find(pname: prefecture_pname).code
+  def prefecture_name=(prefecture_name)
+    self.prefecture_code = JpPrefecture::Prefecture.find(pname: prefecture_name).code
   end
 
 
