@@ -1,0 +1,2 @@
+class AddLatitudeAndLongitudeToUser < ApplicationRecord
+end
